@@ -5,11 +5,8 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='header-elements'>
-        <h2>Order your favorite food here</h2>
-        <p>Choose from a diverse menu featuring a delectable array
-          of dishes crafted with the finest ingredients and culinary
-          expertise. Satisfy your cravings and elevate your dining
-          experience, one delicious meal at a time.
+        <h2>Welcome to your new favorite service, Fresh Bite!</h2>
+        <p>Fresh Bite delivers healthy, homemade meals right to your door. Our dishes are crafted with the freshest ingredients, focusing on nutritious, delicious options to help you eat well, every day.
         </p>
         <button>View Menu</button>
       </div>
