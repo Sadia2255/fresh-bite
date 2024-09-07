@@ -1,0 +1,35 @@
+.table-format {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 0.5fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 15px;
+  border: 1px solid #3a5a49;
+  font-size: 15px;
+}
+
+.title {
+  background-color: #59af5d3b;
+}
+
+.food-item {
+  max-width: 80px;
+  border-radius: 10px;
+  height: auto;
+}
+
+.table-format p:last-child {
+  text-align: center;
+}
+
+
+@media (max-width: 600px) {
+  .table-format {
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 15px;
+  }
+
+  .title {
+    display: none;
+  }
+}

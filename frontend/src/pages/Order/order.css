@@ -1,0 +1,38 @@
+.order {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 75px;
+}
+
+.order-left {
+  width: 100%;
+  max-width: max(30%, 500px);
+}
+
+.title {
+  color: #2e493b;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.order-left input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(66, 102, 69);
+  border-radius: 4px;
+  outline-color: #2e493b;
+}
+
+.fields {
+  display: flex;
+  gap: 10px;
+}
+
+.order-right {
+  width: 100%;
+  max-width: max(45%, 500px);
+}

@@ -1,0 +1,15 @@
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 5%;
+}
+
+.logo {
+  width: max(10%, 120px);
+  cursor: pointer;
+}
+
+.profile {
+  width: 40px;
+}

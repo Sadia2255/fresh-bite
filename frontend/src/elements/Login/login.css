@@ -1,0 +1,112 @@
+.login {
+  position: fixed;
+  /* Make sure it covers the whole screen */
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent grey background */
+  z-index: 9;
+  /* Ensure it is behind the login form */
+}
+
+.login-container {
+  z-index: 10;
+  /* Ensure the form is above the overlay */
+  width: max(23vw, 330px);
+  color: grey;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.75s;
+}
+
+.login-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.login-title img {
+  width: 16px;
+  cursor: pointer;
+}
+
+.login-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-input input {
+  outline: none;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.account-button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: #429168;
+  font-size: 15px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+
+.account-button:hover {
+  opacity: 0.65;
+}
+
+.login-condition {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-top: -15px;
+}
+
+.login-condition input {
+  cursor: pointer;
+}
+
+.login-container p span {
+  color: #4aa476;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.login-container p span:hover {
+  opacity: 0.65;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
