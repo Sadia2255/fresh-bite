@@ -24,9 +24,9 @@ Currently the project is not deployed live as there are additional features I wo
 To run the project locally,
 
 1. Clone the repository:
-   \`\`\`bash
+  bash
    git clone https://github.com/Sadia2255/fresh-bite.git
-   \`\`\`
+
    
 2. Navigate into the project directory:
    \`\`\`bash
