@@ -1,5 +1,6 @@
-
 # Fresh Bite
+
+There are errors in this project that I am trying to resolve (such as placing orders and making payments). However, there is already a good amount of functionality! :)
 
 ## Project Summary
 Fresh Bite is a food delivery service that connects users with fresh, healthy meals. The platform allows users to browse various homemade food options, add items to their cart, and place orders.
@@ -24,47 +25,45 @@ Currently the project is not deployed live as there are additional features I wo
 To run the project locally,
 
 1. Clone the repository:
-  bash
    git clone https://github.com/Sadia2255/fresh-bite.git
 
    
 2. Navigate into the project directory:
-   \`\`\`bash
-   cd fresh-bite
-   \`\`\`
 
-3. Install the necessary dependencies for both the backend and frontend:
+   cd fresh-bite
+
+4. Install the necessary dependencies for both the backend and frontend:
    - For the backend:
-     \`\`\`bash
+
      cd backend
      npm install
-     \`\`\`
+
    - For the frontend:
-     \`\`\`bash
+
      cd ../frontend
      npm install
-     \`\`\`
 
-4. Set up environment variables:
+
+5. Set up environment variables:
    - Create a `.env` file in the `backend` directory and add the following:
-     \`\`\`bash
+
      MONGO_URI=your_mongodb_connection_string
      JWT_SECRET=your_secret_key
-     \`\`\`
+
    
-5. Start the project:
+6. Start the project:
    - Start the backend server:
-     \`\`\`bash
+
      cd backend
      npm run start
-     \`\`\`
+
    - Start the frontend React app:
-     \`\`\`bash
+
      cd ../frontend
      npm start
-     \`\`\`
 
-6. Open your browser and go to `http://localhost:4000` to see the site.
+
+7. Open your browser and go to `http://localhost:4000` to see the site.
 
 ### Option 3: Project Video
 You can view a working video of the project at [Insert Video Link Here].
