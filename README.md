@@ -1,6 +1,6 @@
 # Fresh Bite
 
-There are errors in this project that I am trying to resolve (such as placing orders and making payments). However, there is already a good amount of functionality! :)
+IMPORTANT! There are errors in this project that I am trying to resolve (such as placing orders and making payments). However, there is already a good amount of functionality! :)
 
 ## Project Summary
 Fresh Bite is a food delivery service that connects users with fresh, healthy meals. The platform allows users to browse various homemade food options, add items to their cart, and place orders.
@@ -19,7 +19,7 @@ This project took approximately 15 hours to develop, with time spent on both bac
 ## Running the Project
 
 ### Option 1: Live Deployment
-Currently the project is not deployed live as there are additional features I would love to implement.
+Currently the project is not deployed live as there are additional features I would love to implement and some bugs that I need to fix. 
 
 ### Option 2: Running Locally
 To run the project locally,
