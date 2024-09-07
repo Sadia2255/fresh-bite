@@ -11,7 +11,7 @@ const Add = ({ url }) => {
     name: '',
     description: '',
     price: '',
-    category: "Salad"
+    category: "Salads"
   })
 
   const onChange = (event) => {
@@ -66,14 +66,14 @@ const Add = ({ url }) => {
           <div className='add-category flex-column'>
             <p>Product Category</p>
             <select onChange={onChange} name="category">
-              <option value='Salad'>Salad</option>
-              <option value='Rolls'>Rolls</option>
-              <option value='Desserts'>Desserts</option>
-              <option value='Sandiwch'>Sandwich</option>
-              <option value='Cake'>Cake</option>
-              <option value='Pure Veg'>Pure Veg</option>
+              <option value='Salads'>Salads</option>
+              <option value='Soups'>Soups</option>
+              <option value='Sandwiches'>Sandwiches</option>
               <option value='Pasta'>Pasta</option>
-              <option value='Noodles'>Noodles</option>
+              <option value='Vegetarian'>Vegetarian</option>
+              <option value='Vegan'>Vegan</option>
+              <option value='Desserts'>Desserts</option>
+              <option value='Pastries'>Pastries</option>
             </select>
           </div>
           <div className='add-price flex-column'>
