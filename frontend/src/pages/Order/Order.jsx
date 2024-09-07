@@ -1,6 +1,7 @@
-import React, { useContext, useState, useEffect } from 'react'
-import { Context } from '../../context/Context'
-import './order.css'
+import React, { useContext, useState, useEffect } from 'react';
+import { Context } from '../../context/Context';
+import axios from 'axios';
+import './order.css';
 
 const Order = () => {
   const { totalCart, cart, food_list, token, url } = useContext(Context);
@@ -14,26 +15,47 @@ const Order = () => {
     zipcode: "",
     country: "",
     phone: ""
-  })
+  });
 
   const onChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setData(data => ({ ...data, [name]: value }))
-  }
+    setData(data => ({ ...data, [name]: value }));
+  };
 
   const placeOrder = async (event) => {
     event.preventDefault();
     let orderList = [];
+
+    // Add items from cart to the order
     food_list.forEach((item) => {
       if (cart && cart[item._id] > 0) {
         let itemDetails = { ...item, quantity: cart[item._id] };
         orderList.push(itemDetails);
       }
     });
-    console.log(orderList);
-  };
 
+    let orderData = {
+      address: data,
+      items: orderList,
+      amount: totalCart() + 2, // Add delivery fee
+    };
+
+    try {
+      let response = await axios.post(url + 'api/order/place', orderData, { headers: { token } });
+      console.log('Order Response:', response.data); // Log the response for debugging
+      if (response.data.success) {
+        const { session_url } = response.data;
+        window.location.replace(session_url); // Redirect to Stripe checkout
+      } else {
+        console.error('Order Error:', response.data.message);
+        alert('Error placing order. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error during order placement:', error); // Log error for debugging
+      alert('Error placing order. Please try again.');
+    }
+  };
 
   return (
     <form onSubmit={placeOrder} className='order'>
@@ -74,11 +96,11 @@ const Order = () => {
               <b>${totalCart() === 0 ? 0 : totalCart() + 2}</b>
             </div>
           </div>
-          <button type='checkout' className='checkout-button'>Proceed to Payment</button>
+          <button type='submit' className='checkout-button'>Proceed to Payment</button>
         </div>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default Order
+export default Order;
