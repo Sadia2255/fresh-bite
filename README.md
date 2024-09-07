@@ -66,4 +66,4 @@ To run the project locally,
 7. Open your browser and go to `http://localhost:4000` to see the site.
 
 ### Option 3: Project Video
-You can view a working video of the project at [Insert Video Link Here].
+You can view a working video of the project at [(https://www.youtube.com/watch?v=4q9ywTFgBAM)].
