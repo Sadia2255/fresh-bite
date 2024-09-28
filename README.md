@@ -13,9 +13,6 @@ Fresh Bite is a food delivery service that connects users with fresh, healthy me
 - **MongoDB Integration**: Food items, user data, and cart contents are stored and managed using MongoDB.
 - **API Testing**: The project supports API testing through Thunder Client to ensure that all backend functionalities, like login, food listing, and cart updates, work as expected.
 
-## Time Spent Developing
-This project took approximately 15 hours to develop, with time spent on both backend and frontend functionality, database integration, and testing.
-
 ## Running the Project
 
 ### Option 1: Live Deployment
